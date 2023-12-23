@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jei Investments
+</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="jei_investments-removebg-preview.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const countdownEndDate = new Date('2023-12-22T00:00:00Z').getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeDifference = countdownEndDate - now;
+
+        if (timeDifference > 0) {
+          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          // Change the message and add a line break
+          document.getElementById('countdown').innerHTML = `This website is currently hosted on a temporary link and it will be removed in the next 24 hours. If you are the developer, we recommend purchasing a domain name to ensure uninterrupted access for your users.<p><br>It will be disabled in <strong><span class="modal-message">${hours} Hours, ${minutes} Minutes, and ${seconds} Seconds.</strong></span>`;
+        } else {
+          // Change the message when the time ends
+          const deletedMessage = document.createElement('p');
+          deletedMessage.className = 'modal-message';
+          deletedMessage.innerHTML = '<strong>This website has been deactivated from our servers. If you are the developer, please purchase a domain name to continue using it.</strong>' ;
+          document.getElementById('countdown').replaceWith(deletedMessage);
+          // Remove the "Ok, I understand" button
+          document.querySelector('.modal-footer').remove();
+        }
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      $('#maintenanceModal').modal({
+        backdrop: 'static',
+        keyboard: false
+      });
+    });
+  </script>
+  
+</head>
+<body>
+
+
+<!-- Your modal HTML structure -->
+<div class="modal" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenanceModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header text-center">
+  <h5 class="modal-title w-100" id="maintenanceModalLabel">SHUTDOWN NOTICE</h5>
+</div>
+<div class="modal-body">
+  <p id="countdown" class="valid-message">Initializing...</p>
+</div>
+<div class="modal-footer justify-content-center">
+  <!-- "Ok, I understand" button -->
+  <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I understand.</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@ujenzigroup.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+256312225711</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div id="logo">
+        <!-- <h1><a href="index.html">J-<span>Investments</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="jei_investments-removebg-preview (1).png" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Galley</a></li>
+          <li><a class="nav-link scrollto" href="#team">Staff</a></li>
+        
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+
+    <div class="hero-content" data-aos="fade-up">
+      <h2>Jei <span><br>Investments</br></span><br></h2>
+      <div>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#services" class="btn-projects scrollto">Our Services</a>
+      </div>
+    </div>
+
+    <div class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('trade-market-concept-creative-forex-260nw-1426028174.webp');"></div>
+        <div class="swiper-slide" style="background-image: url('robot-hand-keep-crypto-coin-260nw-2302680191.webp');"></div>
+        <div class="swiper-slide" style="background-image: url('Investing-in-Foreign-Stocks-Advantages-and-Risks-cover.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('GettyImages-509615012-9e7fac66bd704fc6a0826775cf1ba21e.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('amazing-representation-of-investment-toum2u1x5ek5xyhl.jpg');"></div>
+');"></div>
+
+      </div>
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+   <!-- ======= About Section ======= -->
+<section id="about">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-6 about-img">
+        <img src="pngtree-profitloss-and-risk-crossword-letters-loss-text-photo-image_7811336.jpg" alt="Jei Investments Image">
+      </div>
+
+      <div class="col-lg-6 content">
+        <h2>Our Core Values</h2>
+        <h3>Explore the core values that define Jei Investments.</h3>
+
+        <ul>
+          <li><i class="bi bi-check-circle"></i> <strong>COMPANY MISSION</strong>: <strong><em>To provide strategic investment solutions and financial expertise that empower our clients to achieve their financial goals and build lasting wealth.</em></strong></li>
+          <li><i class="bi bi-check-circle"></i> <strong>COMPANY VISION</strong>: <strong><em>Becoming a trusted leader in the financial industry, known for innovative investment strategies and unwavering commitment to client success.</em></strong></li>
+          <li><i class="bi bi-check-circle"></i> <strong>COMPANY MOTTO</strong>: <strong><em>Invest in your dreams, watch them flourish.</em></strong></li>
+        </ul>
+        <div class="col-lg-6 about-img">
+          <img src="desktop-wallpaper-investment-investment-investor.jpg" alt="Jei Investments Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section -->
+
+
+   <!-- ======= Services Section ======= -->
+<section id="services">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      
+      <h2>Services</h2>
+      <p>Explore the range of services offered by Jei Investments.</p>
+    </div>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="box">
+          <div class="icon"><iconify-icon icon="clarity:coin-bag-line" style="font-size: 50px;"></iconify-icon></div>
+          <h4 class="title"><a href="">Investment Solutions</a></h4>
+          <p class="description">Jei Investments specializes in providing strategic investment solutions tailored to meet the financial goals of our clients.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="box">
+          <div class="icon"><iconify-icon icon="guidance:meeting-room" style="font-size: 50px;"></iconify-icon></div>
+          <h4 class="title"><a href="">Financial Advisory</a></h4>
+          <p class="description">Our expert financial advisors offer valuable insights and guidance to empower clients in making informed financial decisions.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="box">
+          <div class="icon"><iconify-icon icon="bx:bxs-bank" style="font-size: 50px;"></iconify-icon></div>
+          <h4 class="title"><a href="">Wealth Management</a></h4>
+          <p class="description">Jei Investments is dedicated to managing and growing the wealth of our clients through strategic financial planning.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="box">
+          <div class="icon"><iconify-icon icon="fa-solid:handshake" style="font-size: 50px;"></iconify-icon></div>
+          <h4 class="title"><a href="">Consultancy Services</a></h4>
+          <p class="description">Our consultancy services provide clients with valuable insights and expertise to navigate the complexities of the financial landscape.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+   
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Read what others have to say about Jei Investments</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Jei Investments provided expert financial advice that significantly contributed to the growth of my portfolio. Their commitment to excellence is commendable!
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
+                <h3>Kawalya Smith</h3>
+                <h4>Investor</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  We are grateful for the strategic investment solutions provided by Jei Investments. Their personalized approach aligns perfectly with our future financial goals.
+                </p>
+                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
+                <h3>Michelle & Malcolm</h3>
+                <h4>Learners</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Jei Investments has been instrumental in helping me navigate the financial landscape. Their consultancy services are unparalleled, and I highly recommend them!
+                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
+                <h3>Geoffrey Ndikabona</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text">If you're interested in venturing into the world of investment, contact us today to get started!</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="wtai://wp/mc;+256312225711">Call To Action 🤙</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
+              <div class="details">
+                <h4>Naaya Charles</h4>
+                <span>C.E.O</span>
+                <p></p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
+              <div class="details">
+                <h4>Geoffrey Ndikabona</h4>
+                <span>Overall Supervisor
+                </span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Use the following information to get in touch with us today!</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address>Lotis Tower, Level 6 and 8, P.O Box 2939, Plot 16 Mackinnon Road, Kampala.
+
+</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+256312225711">+256 312 225 711</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@ujenzigroup.com">info@ujenzigroup.com</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container mb-4"><center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63835.99625238537!2d32.522489944588955!3d0.33587671316673234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d0.3369699!2d32.541657199999996!4m5!1s0x177dbbffaebd5161%3A0x5af5cc1ea30eab48!2slotis%20tower%20google%20map!3m2!1d0.3217083!2d32.585103499999995!5e0!3m2!1sen!2sug!4v1702839709376!5m2!1sen!2sug" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+     
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <footer class="text-center">
+    <div class="credits">
+        <script>
+            document.write("© Ujenzi Group of Companies " + new Date().getFullYear());
+        </script>
+    </div>
+</footer>
+
+</div>
+</div>
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
